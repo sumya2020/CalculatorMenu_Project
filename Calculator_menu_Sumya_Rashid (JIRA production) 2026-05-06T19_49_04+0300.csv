@@ -1,0 +1,644 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project description,Project url,Priority,Resolution,Assignee,Reporter,Creator,Created,Updated,Last Viewed,Resolved,Affects Version/s,Fix Version/s,Component/s,Due Date,Votes,Labels,Description,Environment,Watchers,Log Work,Original Estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Attachment,Attachment,Attachment,Custom field ((backup) Browser/s),Custom field ((backup) Exists in the current implementation?),Custom field ((backup) External issue ID - old),Custom field ((backup) Integrator),Custom field ((backup) Issue Occurred On),Custom field ((backup) Issue Status Comment),Custom field ((backup) Platform),Custom field ((backup) Root of the problem),Custom field ((backup) Test Type),Custom field ((backup) Test case priority),Custom field ((backup) Type of Issue),Custom field ((backup) Work Type),"Custom field ((backup, del) Test tasks)","Custom field ((tmp, del) Build/s)","Custom field ((tmp, del?) TestCase Link)",Custom field (Account),Custom field (Actual Result),Custom field (Affected Test Cases),Custom field (Affects Build/s),Custom field (Asana link),Custom field (BT Jira ID),Custom field (BT Project),Custom field (Basecamp Link),Custom field (Billable Category),Custom field (Browser),Custom field (Browser / Environment),Custom field (Browser Version),Custom field (Build/s),Custom field (Business Unit),Custom field (CQ ID),Custom field (CS Project Coordinator),Custom field (Case Study necessity postpone date),Custom field (Client Device),Custom field (Client Device Version),Custom field (Cloud Version),Custom field (Core issue),Custom field (Created By),Custom field (Development),Custom field (End Date),Custom field (Epic Link),Custom field (Epic/Theme),Custom field (Error Type),Custom field (Expected Result),Custom field (Flagged),Custom field (Found by),Custom field (Functionality Changes?),Custom field (Handled By (SGW Tester)),Custom field (Hardware Version),Custom field (Impact),Custom field (Impacted Areas),Custom field (Importance),Custom field (Iteration),Custom field (Level),Custom field (New Original Estimate),Custom field (Next Step),Custom field (Number of candidates),Custom field (Occurrence),Custom field (Original story points),Custom field (Parent Link),Custom field (Partner Contact),Custom field (Payment Status),Custom field (Planned Efforts (FTE)),Custom field (Priority Level),Custom field (Proxy Required),Custom field (RFX Coordinator),Custom field (Rank),Custom field (Rank (Obsolete)),Custom field (Regional Coordinator),Custom field (Related Cases),Custom field (Reported Version),Custom field (Request Info From),Custom field (Revised),Custom field (Router),Custom field (SF Case No),Custom field (SGW Jira ID),Custom field (Severity/Importance),Custom field (Share with),Custom field (Solution),Sprint,Custom field (Start Date),Custom field (Supervisor),Custom field (TVS ID),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field (Team),Custom field (Team Role),Custom field (Test Type),Custom field (TestLink case),Custom field (Time Category),Custom field (To Attention Of),Custom field (Type of engagement),Custom field (URL),Custom field (Users),Custom field (Version To Fix),Custom field (WSJF),Custom field (Wiki Link),Custom field (Wires Link),Custom field (ZendeskID),Custom field (Обеспечение оборудованием),Comment
+Saturday: Compensation is added even an empty order is placed,QATC-987633,3985294,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,20/Apr/26 10:41 AM,20/Apr/26 10:41 AM,06/May/26 7:48 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Saturday
+ # Without selecting any item, click the ""Make the order"" button
+ # Observe the amount of the account
+ 
+Actual Result:  Compensation is added even an empty order is placed. Please see (Bug15.mp4)
+Expected Result: Compensation should only be allowed for successful orders.
+
+ ","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"20/Apr/26 10:41 AM;s.rashid;Bug15.mp4;https://jira.a1qa.com/secure/attachment/2775860/Bug15.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|iftdvs:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Saturday: A transaction entry is created without a valid order,QATC-987628,3985289,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,20/Apr/26 10:30 AM,20/Apr/26 10:30 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Saturday
+ #  Without selecting any item, click the ""Make the order"" button
+ # Observe the Order History
+ 
+Actual Result :A transaction entry is created without a valid order. Please see (bug13.png & Bug14.mp4)
+Expected Result: No transaction (even 0 rub) should be recorded for an empty order.
+
+ ","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )
+
+ ",,,,,,,,,,Leads and Reporter only,"20/Apr/26 10:30 AM;s.rashid;bug13.png;https://jira.a1qa.com/secure/attachment/2775851/bug13.png","20/Apr/26 10:29 AM;s.rashid;Bug14.mp4;https://jira.a1qa.com/secure/attachment/2775852/Bug14.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|iftduo:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+All items from All day can be selected at a time,QATC-987604,3985259,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,20/Apr/26 9:14 AM,20/Apr/26 9:14 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for All days.
+ # Select all items of food
+ # Click the ""Make the order"" button
+ # Observe whether the order is successful or not
+ 
+Actual Result: All items from All day can be selected at a time. Please see (Bug13.mp4)
+Expected Result: All items for one day should be selected only.","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )
+
+ ",,,,,,,,,,Leads and Reporter only,"20/Apr/26 9:12 AM;s.rashid;Bug13.mp4;https://jira.a1qa.com/secure/attachment/2775824/Bug13.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|iftdo0:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Sunday: After placing an 1 rub order system compensates the full daily limit,QATC-987589,3985238,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,20/Apr/26 8:34 AM,20/Apr/26 8:34 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Sunday
+ # Select ""Bread 1 rub"".
+ # Click the ""Make the order"" button
+ # Observe the amount in the personal account
+ 
+Actual Result: After placing a 1 rub order, the system compensates the full daily limit. Please see (Bug12.mp4)
+Expected Result: The system should compensate only the actual order amount (1 rub)","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"20/Apr/26 8:31 AM;s.rashid;Bug12.mp4;https://jira.a1qa.com/secure/attachment/2775804/Bug12.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|iftdjc:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Saturday: The order is done even after having insufficient balance,QATC-987583,3985232,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,20/Apr/26 8:17 AM,20/Apr/26 8:17 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Saturday
+ # Select ""Ham and Eggs 69.9 rub"".
+ # Select ""Soup 'With you always' 111.11 rub"".
+ # Click the ""Make the order"" button
+ # Observe the amount debited from the account
+ 
+Actual Result:   The order is done even after having an insufficient balance. Please see (bug11.1.png & bug11.2.png)
+Expected Result: A warning message should come if ""Make the order"" button is clicked with insufficient balance.","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"20/Apr/26 8:14 AM;s.rashid;bug11.1.png;https://jira.a1qa.com/secure/attachment/2775795/bug11.1.png","20/Apr/26 8:15 AM;s.rashid;bug11.2.png;https://jira.a1qa.com/secure/attachment/2775794/bug11.2.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|iftdi0:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+"Saturday: Continuous order of Soup only clicking the ""Make the order"" button",QATC-987578,3985227,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,20/Apr/26 8:04 AM,20/Apr/26 8:04 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Saturday
+ # Select ""Soup 'With you always' 111.11 rub"".
+ # Click the ""Make the order"" button continuously
+ # Observe the amount debited from the account
+
+Actual Result: Continuous order of Soup only clicking the ""Make the order"" button. Please see (Bug10.mp4)
+Expected Result: After clicking the button ""Make the order"" the items should be reset again.
+
+ ","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"20/Apr/26 8:04 AM;s.rashid;Bug10.mp4;https://jira.a1qa.com/secure/attachment/2775789/Bug10.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|iftdgw:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Saturday: Soup 'With you always' 111.11 rub remains selected even after placing the order,QATC-987390,3985025,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,19/Apr/26 10:11 AM,19/Apr/26 10:11 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Saturday
+ # Select ""Ham and Eggs 69.9 rub"".
+ # Select ""Soup 'With you always' 111.11 rub"".
+ # Click the ""Make the order"" button
+ # Observe the checkbox Soup 'With you always' 111.11 rub"".
+ 
+Actual Result: Soup 'With you always' 111.11 rub remains selected even after placing the order. Please see (Bug9.mp4)
+Expected Result: After making the order, all the items should be reset or unselected.
+
+ ","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"19/Apr/26 10:02 AM;s.rashid;Bug9.mp4;https://jira.a1qa.com/secure/attachment/2775621/Bug9.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|iftc80:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Saturday: 131 rub is shown in order history instead of deducted amount 131.01 rub,QATC-987382,3985017,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,19/Apr/26 9:37 AM,19/Apr/26 9:37 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Saturday
+ # Select ""Ham and Eggs 69.9 rub"".
+ # Select ""Soup 'With you always' 111.11 rub"".
+ # Click the ""Make the order"" button
+ # Observe the amount debited in Order History
+ 
+Actual Result: 131 rub is shown in order history instead of deducted amount 131.01 rub. Please see (Bug8.mp4 & Bug8.png & Bug8.1.png)
+Expected Result: After compensating 50 rub from the company (181.01-50), 131.01 rub should be shown in the order history.
+
+ ","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"19/Apr/26 9:37 AM;s.rashid;bug8.1.png;https://jira.a1qa.com/secure/attachment/2775611/bug8.1.png","19/Apr/26 9:36 AM;s.rashid;Bug8.mp4;https://jira.a1qa.com/secure/attachment/2775613/Bug8.mp4","19/Apr/26 9:37 AM;s.rashid;Bug8.png;https://jira.a1qa.com/secure/attachment/2775612/Bug8.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|iftc68:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Only legmen is showed in history but the total amount deduction includes the price of soup,QATC-987376,3985011,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,19/Apr/26 9:20 AM,19/Apr/26 9:20 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Saturday
+ # Select ""Soup 'With you always' 111.11 rub"".
+ # Select Menu for Friday
+ # Select ""Lagman 65 rub""
+ # Click the ""Make the order"" button
+ # Observe the amount debited in Order History
+ 
+Actual Result: Only legmen is shown in history, but the total amount deduction includes the price of soup. Please see (Bug7.png)
+Expected Result: The deducted amount should match the displayed items.","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"19/Apr/26 9:20 AM;s.rashid;Bug7.mp4;https://jira.a1qa.com/secure/attachment/2775605/Bug7.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|iftc4w:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+"Tuesday: Pop-up displays ""Congratulations +1 bug!"" after clicking the ""Make the order"" button.",QATC-987288,3984921,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,18/Apr/26 8:43 PM,18/Apr/26 8:43 PM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Tuesday
+ # Select ""Caesar Salad 82.54 rub"".
+ # Select ""Pork Stew 250 rub"".
+ # Click the ""Make the order"" button more than once
+ # Observe the displayed pop-up message. 
+
+Actual Result: Pop-up displays ""Congratulations +1 bug!"" after clicking the ""Make the order"" button. Please see (BUG6.png & BUG6.mp4)
+
+Expected Result: The pop-up should show a confirmation message of order success after clicking the ""Make the order button more than once"".
+
+ ","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"18/Apr/26 8:27 PM;s.rashid;BUG6.mp4;https://jira.a1qa.com/secure/attachment/2775489/BUG6.mp4","18/Apr/26 8:31 PM;s.rashid;BUG6.png;https://jira.a1qa.com/secure/attachment/2775488/BUG6.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|iftbkw:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Tuesday: 283 rub is shown in order history instead of 282.54 rub,QATC-987285,3984916,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,18/Apr/26 7:58 PM,18/Apr/26 7:58 PM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Tuesday
+ # Select ""Caesar Salad 82.54 rub"".
+ # Select ""Pokr Stew 250 rub"".
+ # Click the ""Make the order"" button
+ # Observe the amount debited in Order History
+ 
+Actual Result: 283 rub is shown in order history instead of 282.54 rub. Please see (bug5.png)
+Expected Result: After compensating 50 rub from the company (332.54-50), 282.54 rub should be shown in the order history.","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"18/Apr/26 7:54 PM;s.rashid;bug5.png;https://jira.a1qa.com/secure/attachment/2775483/bug5.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|iftbjs:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Tuesday: 163 rub is shown in the order history instead of 162.54 rub,QATC-987284,3984915,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,18/Apr/26 7:49 PM,18/Apr/26 7:49 PM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Tuesday
+ # Select ""Caesar Salad 82.54 rub"".
+ # Select ""Broccoli Cream Soup 130 rub"".
+ # Click the ""Make the order"" button
+ # Observe the amount debited in Order History
+ 
+Actual Result: 163 rub is shown in the order history instead of 162.54 rub. Please see (bug33.png)
+Expected Result: After compensating 50 rub from the company (212.54-50), 162.54 rub should be shown in the order history.","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"18/Apr/26 7:48 PM;s.rashid;bug4.png;https://jira.a1qa.com/secure/attachment/2775482/bug4.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|iftbjk:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Tuesday: 34 rub is showed in order history instead of 33.54 rub,QATC-987245,3984864,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,18/Apr/26 9:39 AM,18/Apr/26 9:39 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Wednesday
+ # Select ""Caesar Salad 82.54 rub"".
+ # Select ""Bread 1 rub"".
+ # Click the ""Make the order"" button
+ # Observe the amount debited in Order History
+ 
+Actual Result:  34 rub is showed in order history instead of 33.54 rub. Please see (bug3.png)
+Expected Result: Transaction history should display the same amount 33.54, that was debited from the account.","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"18/Apr/26 9:38 AM;s.rashid;bug3.png;https://jira.a1qa.com/secure/attachment/2775437/bug3.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|iftb88:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Tuesday: 33 rub is debited instead of 32.54 after making the order,QATC-987233,3984809,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,18/Apr/26 8:02 AM,18/Apr/26 8:02 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Tuesday
+ # Select ""Caesar Salad 82.54 rub"".
+ # Click the ""Make the order"" button
+ # Observe the amount debited in Order History
+ 
+Actual Result: 33 rub is debited instead of 32.54 after making the order. Please see (bug2.png)
+Expected Result: 32.54 should be debited from the account without unintended rounding.","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"18/Apr/26 8:01 AM;s.rashid;bug2.png;https://jira.a1qa.com/secure/attachment/2775423/bug2.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|iftaw0:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Monday: The system turns 2 instead of the expected value 2.1 after making the order,QATC-987230,3984806,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,18/Apr/26 7:50 AM,18/Apr/26 7:50 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Monday
+ # Select ""Semolina Porridge 52.1 rub"".
+ # Click the ""Make the order"" button
+ # Observe the amount debited in Order History
+ 
+Actual Result: The system turns 2 instead of the expected value 2.1 after making the order. Please see (bug1.png)
+Expected Result: The system should display the correct value 2.1 without losing the decimal precision.","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"18/Apr/26 7:50 AM;s.rashid;bug1.png;https://jira.a1qa.com/secure/attachment/2775419/bug1.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|iftavc:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Wednesday: 201 rub is debited from the account instead of 251 rub after making the order,QATC-987071,3984204,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,17/Apr/26 7:32 AM,17/Apr/26 7:32 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Wednesday
+ # Select ""Chicken Chop 250 rub"".
+ # Select ""Bread 1 rub"".
+ # Click the ""Make the order"" button
+ # Observe the amount debited in Order History
+ 
+Actual Result:  201 rub is debited from the account instead of 251 rub after making the order. Please see (bug33.png)
+Expected Result: 251 rub should be debited from the account after making the order.","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"17/Apr/26 7:31 AM;s.rashid;bug34.png;https://jira.a1qa.com/secure/attachment/2775097/bug34.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift76g:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Wednesday: 81 rub is debited from the account instead of 131 rub after making the order,QATC-987067,3984199,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,17/Apr/26 7:07 AM,17/Apr/26 7:07 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Wednesday
+ # Select ""Borscht 130 rub"".
+ # Select ""Bread 1 rub"".
+ # Click the ""Make the order"" button
+ # Observe the amount debited in Order History
+ 
+Actual Result:  81 rub is debited from the account instead of 131 rub after making the order. Please see (bug33.png)
+Expected Result: 131 rub should be debited from the account after making the order.","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"17/Apr/26 7:07 AM;s.rashid;bug33.png;https://jira.a1qa.com/secure/attachment/2775092/bug33.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift75c:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Wednesday: 150 rub is debited from the account instead of 200 rub after making the order,QATC-987065,3984196,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,17/Apr/26 6:59 AM,17/Apr/26 6:59 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Wednesday
+ # Select ""Borscht 130 rub"".
+ # Select ""Mashed Potato 70 rub"".
+ # Click the ""Make the order"" button
+ # Observe the amount debited in Order History
+ 
+Actual Result: 150 rub is debited from the account instead of 200 rub after making the order. Please see (bug32.png)
+Expected Result: 200 rub should be debited after making the order.","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )
+
+ ",,,,,,,,,,Leads and Reporter only,"17/Apr/26 6:59 AM;s.rashid;bug32.png;https://jira.a1qa.com/secure/attachment/2775090/bug32.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift74o:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Wednesday: 330 rub is debited from the account instead if 380 rub after making the order,QATC-987063,3984194,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,17/Apr/26 6:54 AM,17/Apr/26 6:54 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Wednesday
+ # Select ""Borscht 130 rub"".
+ # Select ""Chicken Chop 250 rub"".
+ # Click the ""Make the order"" button
+ # Observe the amount debited in Order History
+ 
+Actual Result: 330 rub is debited from the account instead if 380 rub after making the order. Please see (bug31.png)
+Expected Result: 380 rub should be debited from the account after making the order.","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"17/Apr/26 6:54 AM;s.rashid;bug31.png;https://jira.a1qa.com/secure/attachment/2775088/bug31.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift748:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Wednesday: 3 rub is debited from the account instead of 53 rub after making the order,QATC-987059,3984190,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,17/Apr/26 5:04 AM,17/Apr/26 5:04 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Wednesday
+ # Select ""Millet porridge 52 rub""
+ # .Select ""Bread 1 rub"".
+ # Click the ""Make the order"" button
+ # Observe the amount debited in Order History
+ 
+Actual Result: 3 rub is debited from the account instead of 53 rub after making the order. Please see (bug30.png)
+Expected Result: 53 rub should be debited from the account after making the order.","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"17/Apr/26 5:01 AM;s.rashid;bug30.png;https://jira.a1qa.com/secure/attachment/2775084/bug30.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift73c:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Wednesday: 72 rub is debited from the account instead of 122 rub after making the order,QATC-987058,3984189,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,17/Apr/26 4:59 AM,17/Apr/26 4:59 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Wednesday
+ # Select ""Millet porridge 52 rub"".
+ # Select ""Mashed Potato 70 rub"".
+ # Click the ""Make the order"" button
+ # Observe the amount debited in Order History
+ 
+Actual Result: 72 rub is debited from the account instead of 122 rub after making the order. Please see (bug29.png)
+Expected Result: 122 rub should be debited from the account after making the order.","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )
+
+ ",,,,,,,,,,Leads and Reporter only,"17/Apr/26 4:59 AM;s.rashid;bug29.png;https://jira.a1qa.com/secure/attachment/2775083/bug29.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift734:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Wednesday: 252 rub is debited from the account instead of 302 rub after making the order,QATC-987057,3984188,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,17/Apr/26 4:53 AM,17/Apr/26 4:53 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Wednesday
+ # Select ""Millet porridge 52 rub"".
+ # Select ""Chicken Chop 250 rub"".
+ # Click the ""Make the order"" button
+ # Observe the amount debited in Order History
+ 
+Actual Result: 252 rub is debited from the account instead of 302 rub after making the order. Please see (bug28.png)
+Expected Result: 302 rub should be debited from the account after making the order","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"17/Apr/26 4:52 AM;s.rashid;bug28.png;https://jira.a1qa.com/secure/attachment/2775082/bug28.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift72w:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Wednesday: 132 rub is debited from the account instead of 182 rub after making the order,QATC-987056,3984187,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,17/Apr/26 4:47 AM,17/Apr/26 4:47 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Wednesday
+ # Select ""Millet porridge 52 rub"".
+ # Select ""Borscht 130 rub"".
+ # Click the ""Make the order"" button
+ # Observe the amount debited in Order History
+ 
+Actual Result: 132 rub is debited from the account instead of 182 rub after making the order. Please see (bug27.png)
+Expected Result: 182 rub should be debited from the account after making the order.","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"17/Apr/26 4:46 AM;s.rashid;bug27.png;https://jira.a1qa.com/secure/attachment/2775081/bug27.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift72o:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Wednesday: 0 rub is debited from account instead of 1 rub after making the order,QATC-987055,3984186,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,17/Apr/26 4:33 AM,17/Apr/26 4:33 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Wednesday
+ # Select ""Bread 1 rub"".
+ # Click the ""Make the order"" button
+ # Observe the amount debited in Order History
+ 
+Actual Result: 0 rub is debited from account instead of 1 rub after making the order. Please see (bug26.png)
+Expected Result: 1 rub should be debited from account after making the order of Bread.","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )
+
+ ",,,,,,,,,,Leads and Reporter only,"17/Apr/26 4:32 AM;s.rashid;bug26.png;https://jira.a1qa.com/secure/attachment/2775080/bug26.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift72g:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Wednesday: 20 rub is deducted from the account instead of 70 rub ,QATC-987054,3984185,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,17/Apr/26 4:27 AM,17/Apr/26 4:27 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Wednesday
+ # Select ""Mashed Potato 70 rub"".
+ # Click the ""Make the order"" button
+ # Observe the amount debited in Order History
+ 
+Actual Result: 20 rub is deducted from the account instead of 70 rub. Please see (bug25.png)
+Expected Result: 70 rub should be debited from the account after making the order.","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"17/Apr/26 4:26 AM;s.rashid;bug25.png;https://jira.a1qa.com/secure/attachment/2775079/bug25.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift728:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Wednesday: 200 rub is debited from the account instead of 250 rub after making the order,QATC-987053,3984184,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,17/Apr/26 4:19 AM,17/Apr/26 4:19 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Wednesday
+ # Select ""Chicken Chop 250 rub"".
+ # Click the ""Make the order"" button
+ # Observe the amount debited in Order History
+ 
+Actual Result:  200 rub is debited from the account instead of 250 rub after making the order. Please see (bug24.png)
+Expected Result: 250 rub should be debited from the account after making the order.","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"17/Apr/26 4:18 AM;s.rashid;bug24.png;https://jira.a1qa.com/secure/attachment/2775077/bug24.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift720:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Wednesday: 80 rub is debited from the account instead of 130 rub after making the order,QATC-987052,3984183,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,17/Apr/26 4:12 AM,17/Apr/26 4:12 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Wednesday
+ # Select ""Borscht 130 rub"".
+ # .Click the ""Make the order"" button
+ # Observe the amount debited in Order History
+ 
+Actual Result: 80 rub is debited from the account instead of 130 rub after making the order. Please see (bug23.png)
+Expected Result: 130 rub should be debited from the account after making the order.","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"17/Apr/26 4:12 AM;s.rashid;bug23.png;https://jira.a1qa.com/secure/attachment/2775076/bug23.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift71s:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Wednesday: 2 rub is debited from account instead of 52 rub after making the order,QATC-987051,3984182,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,17/Apr/26 4:06 AM,17/Apr/26 4:06 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Wednesday
+ # Select ""Millet porridge 52 rub"" .
+ # Click the ""Make the order"" button
+ # Observe the amount debited in Order History
+ 
+Actual Result: 2 rub is debited from account instead of 52 rub after making the order. Please see (bug22.png)
+Expected Result: 52 rub should be debited from the account after making the order","OS: Windows 11 (64 bit)
+Browser: Google chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"17/Apr/26 4:06 AM;s.rashid;bug22.png;https://jira.a1qa.com/secure/attachment/2775075/bug22.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift71k:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Tuesday: 414 rub is debited from the account instead of 463.54 after making the order,QATC-987000,3984106,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,16/Apr/26 8:37 PM,16/Apr/26 8:37 PM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Tuesday.
+ # Select ""Caesar Salad 82.54 rub"".
+ # Select ""Broccoli Cream Soup 130 rub"".
+ # Select ""Pork Stew 250 rub"".
+ # Select ""Bread 1 rub."".
+ # Click the ""Make the order"" button
+ # Observe the amount debited in Order History
+ 
+Actual Result: 414 rub is debited from the account instead of 463.54 after making the order. Please see (bug21.png)
+Expected Result: 463.54 rub should be debited from the account after making the order.","OS: Windows 11 (64 bit)
+Browser: Google chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"16/Apr/26 8:37 PM;s.rashid;bug21.png;https://jira.a1qa.com/secure/attachment/2774972/bug21.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift6ko:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Tuesday: 81 rub is debited from account instead of 131 rub after making the order,QATC-986992,3984059,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,16/Apr/26 6:16 PM,16/Apr/26 6:16 PM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Tuesday
+ # Select ""Broccoli Cream Soup 130 rub"".
+ # Select ""Bread 1 rub"".
+ # Click ""Make the order"" button.
+ # Observe the amount debited in Order History
+ 
+Actual Result: 81 rub is debited from account instead of 131 rub after making the order. Please see (bug20.png)
+Expected Result: 131 rub should be debited from the account after making the order.","OS: Windows 11 (64 bit)
+Browser: Google chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"16/Apr/26 6:11 PM;s.rashid;bug20.png;https://jira.a1qa.com/secure/attachment/2774947/bug20.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift6ao:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Tuesday: 330 rub is debited from account instead of 380 rub after making the order,QATC-986989,3984055,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,16/Apr/26 6:11 PM,16/Apr/26 6:11 PM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Tuesday
+ # Select ""Broccoli Cream Soup 130 rub"".
+ # Select ""Pork Stew 250 rub"".
+ # Click the ""Make the order"" button.
+ # Observe the amount debited in Order History
+ 
+Actual Result: 330 rub is debited from the account instead of 380 rub after making the order. Please see (bug19.png)
+Expected Result: 380 rub should be debited from the account after making the order","OS: Windows 11 (64 bit)
+Browser: Google chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"16/Apr/26 6:10 PM;s.rashid;bug19.png;https://jira.a1qa.com/secure/attachment/2774945/bug19.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift69s:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Tuesday: 413 rub is debited from account instead of 462.54 after amking the order,QATC-986988,3984054,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,16/Apr/26 6:02 PM,16/Apr/26 6:02 PM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Tuesday
+ # Select ""Caesar Salad 82.54 rub"" .
+ # Select ""Broccoli Cream Soup 130 rub"".
+ # Select ""Pork Stew 250 rub"".
+ # Click the ""Make the order"" button
+ # Observe the amount debited in Order History
+ 
+Actual Result: 413 rub is debited from account instead of 462.54 after amking the order. Please see (bug18.png)
+Expected Result: 462.54 rub should be deducted from the account after making the order.","OS: Windows 11 (64 bit)
+Browser: Google chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"16/Apr/26 6:01 PM;s.rashid;bug18.png;https://jira.a1qa.com/secure/attachment/2774944/bug18.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift69k:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Tuesday: 34 rub is debited from account instead of 83.54 rub after making the order,QATC-986985,3984050,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,16/Apr/26 5:52 PM,16/Apr/26 5:52 PM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Tuesday
+ # Select ""Caesar Salad 82.54 rub"".
+ # Select ""Bread 1 rub"".
+ # Click the ""Make the order"" button
+ # Observe the amount debited in Order History
+ 
+Actual Result: 34 rub is debited from account instead of 83.54 rub after making the order. Please see (bug17.png)
+Expected Result: 83.54 rub should be debited from the account after making the order.","OS: Windows 11 (64 bit)
+Browser: Google chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"16/Apr/26 5:44 PM;s.rashid;bug17.png;https://jira.a1qa.com/secure/attachment/2774939/bug17.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift68o:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Tuesday: 283 rub is debited from account instead of 332.54 rub after making order,QATC-986983,3984045,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,16/Apr/26 5:44 PM,16/Apr/26 5:44 PM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Tuesday
+ # Select ""Caesar Salad 82.54 rub"".
+ # Select ""Pork Stew 250 rub"".
+ # Click the ""Make the order"" button
+ # Observe the amount debited in Order History
+ 
+Actual Result:  283 rub is debited from the account instead of 332.54 rub after making the order. Please see (bug16.png)
+Expected Result: 332.54 rub should be debited from the account after making the order.","OS: Windows 11 (64 bit)
+Browser: Google chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"16/Apr/26 5:37 PM;s.rashid;bug16.png;https://jira.a1qa.com/secure/attachment/2774931/bug16.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift67k:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Tuesday: 201 rub is debited instead of 251 rub after making order,QATC-986965,3983928,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,16/Apr/26 1:29 PM,16/Apr/26 1:29 PM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Tuesday
+ # Select ""Pork Stew 250 rub."".
+ # Select ""Bread 1 rub."".
+ # Click the ""Make the order"" button.
+ # Observe the amount debited in Order History
+
+Actual Result: 201 rub is debited instead of 251 rub after making order. Please see (bug15.png & bug15.2.png
+
+Expected Result: 251 rub should be deducted from the account after making order.","OS: Windows 11 (64 bit)
+Browser: Google chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"16/Apr/26 1:21 PM;s.rashid;bug15.2.png;https://jira.a1qa.com/secure/attachment/2774828/bug15.2.png","16/Apr/26 1:21 PM;s.rashid;bug15.png;https://jira.a1qa.com/secure/attachment/2774829/bug15.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift5io:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Tuesday: 163 rub is debited from account instead of 212.54 rub after making order,QATC-986964,3983926,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,16/Apr/26 1:19 PM,16/Apr/26 1:19 PM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Tuesday
+ # Select ""Caesar Salad 82.54 rub"".
+ # Select ""Broccoli Cream Soup 130 rub"".
+ # Click ""Make the order"" button.
+ # Observe the amount debited in Order History
+
+Actual Result: 163 rub is debited from account instead of 212.54 rub after making order
+
+Expected Result: 212.54 rub should be debited after making order","OS: Windows 11 (64 bit)
+Browser: Google chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"16/Apr/26 1:11 PM;s.rashid;bug14.1.png;https://jira.a1qa.com/secure/attachment/2774826/bug14.1.png","16/Apr/26 1:12 PM;s.rashid;bug14.2.png;https://jira.a1qa.com/secure/attachment/2774825/bug14.2.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift5i8:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Tuesday: The amount of order is showing Floating point precision issue,QATC-986962,3983920,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,16/Apr/26 1:01 PM,16/Apr/26 1:01 PM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Tuesday
+ # Select ""Caesar Salad 82.54 rub"" .
+ # Select ""Broccoli Cream Soup 130 rub"".
+ # Observe ""The amount of your order"" section
+
+Actual Result: The amount of order is showing a floating-point precision issue. Please see (bug13.png)
+
+Expected Result: The value should be rounded to two decimal places for proper display.","OS: Windows 11 (64 bit)
+Browser: Google chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"16/Apr/26 12:56 PM;s.rashid;bug13.png;https://jira.a1qa.com/secure/attachment/2774820/bug13.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|ift5h4:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Tuesday: 0 rub is debited from account instead of 1 rub after making order,QATC-986961,3983905,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,16/Apr/26 12:38 PM,16/Apr/26 12:38 PM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Tuesday
+ # Select ""Bread 1 rub"" .
+ # Click ""Make the order"" button.
+ # Observe the amount debited in Order History
+
+Actual Result: 0 rub is debited from account instead of 1 rub after making order. Please see (bug12.1.png & bug12.2.png)
+
+Expected Result: 1 rub should be debited from account after making order of bread.","OS: Windows 11 (64-bit)
+Browser: Google Chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"16/Apr/26 12:33 PM;s.rashid;bug12.1.png;https://jira.a1qa.com/secure/attachment/2774818/bug12.1.png","16/Apr/26 12:33 PM;s.rashid;bug12.2.png;https://jira.a1qa.com/secure/attachment/2774817/bug12.2.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift5ds:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Tuesday: Spelling Mistake of Pork Strew,QATC-986959,3983898,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,16/Apr/26 12:12 PM,16/Apr/26 12:12 PM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Tuesday
+ # Observe the spelling of pork in 3rd checkbox.
+
+Actual Result:  Spelling Mistake of Pork. Please see (bug11.png)
+
+Expected Result: The Spelling of pork should be Pork.","OS: Windows 11 (64 bit)
+Browser: Google chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"16/Apr/26 12:08 PM;s.rashid;bug11.png;https://jira.a1qa.com/secure/attachment/2774805/bug11.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|ift5c8:",9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Tuesday: 200 rub is debited from account instead of 250 rub after making order,QATC-986957,3983895,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,16/Apr/26 12:05 PM,16/Apr/26 12:05 PM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Tuesday
+ # Select ""Pork Stew 250 rub"".
+ # Click ""Make the order"" button
+ # Observe the amount debited in Order History
+
+Actual Result: 200 rub is debited from account instead of 250 rub after making order. Please see (bug10.1.png & bug10.2.png)
+
+Expected Result: 250 rub should be debited from account after making an order of Pork Stew.","OS: Windows 11 (64 bit)
+Browser: Google chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"16/Apr/26 11:58 AM;s.rashid;bug10.1.png;https://jira.a1qa.com/secure/attachment/2774802/bug10.1.png","16/Apr/26 11:58 AM;s.rashid;bug10.2.png;https://jira.a1qa.com/secure/attachment/2774801/bug10.2.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift5bk:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Tuesday: 80 rub is debited from account instead of 130 rub after making order,QATC-986954,3983890,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,16/Apr/26 11:54 AM,16/Apr/26 11:54 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Monday
+ # Select ""Broccoli Cream Soup 130 rub"".
+ # Click ""Make the order"" button
+ # Observe the amount debited in Order History
+
+Actual Result: 80 rub is debited from the account instead of 130 rub after making order. Please see (bug9.1.png & bug9.2.png)
+
+Expected Result: 130 rub should be deducted from the account after making the order.","OS: Windows 11 (64 bit)
+Browser: Google chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"16/Apr/26 11:39 AM;s.rashid;bug9.1.png;https://jira.a1qa.com/secure/attachment/2774796/bug9.1.png","16/Apr/26 11:39 AM;s.rashid;bug9.2.png;https://jira.a1qa.com/secure/attachment/2774795/bug9.2.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift5ag:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Tuesday: 655 rub is debited from account instead of 82.54 rubles after making order,QATC-986951,3983881,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,16/Apr/26 11:27 AM,16/Apr/26 11:27 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Tuesday.
+ # Select ""Caesar Salad 82.54 rub"".
+ # Click ""Make the order"" button.
+ # Obseve the amount debited in Order History
+
+Actual Result: 655 rub is debited from account instead of 82.54 rubles after making order. Please see (bug8.1.png & bug8.2.png)
+
+Expected Result: 82.54 rubles should be debited from account after making the order.","OS: Windows 11 (64 bit)
+Browser: Google chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"16/Apr/26 10:55 AM;s.rashid;bug8.1.png;https://jira.a1qa.com/secure/attachment/2774780/bug8.1.png","16/Apr/26 10:55 AM;s.rashid;bug8.2.png;https://jira.a1qa.com/secure/attachment/2774779/bug8.2.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift58g:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Monday: 572 rub is deducted instead of 622.1 rub after making order,QATC-986940,3983861,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,16/Apr/26 10:47 AM,16/Apr/26 10:47 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Monday.
+ # Select ""Semolina Porridge 52.1 rub"".
+ # Select ""Two scrambled eggs 70 rub"".
+ # Select ""Open Buffet 350 rub"".
+ # Select ""Pilaf 150 rub"".
+ # Click ""Make the order"" button
+ # Observe the amount debited in Order History
+
+Actual Result: 572 rub is deducted instead of 622.1 rub after making order. Please see (bug7.1.png and bug7.2.png)
+
+Expected Result: 622.1 rubles should be deducted after making order.","OS: Windows 11 (64 bit)
+Browser: Google chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"16/Apr/26 10:36 AM;s.rashid;bug7.1.png;https://jira.a1qa.com/secure/attachment/2774760/bug7.1.png","16/Apr/26 10:36 AM;s.rashid;bug7.2.png;https://jira.a1qa.com/secure/attachment/2774759/bug7.2.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift540:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Monday: 170 rub is debited instead of 220 rubles after making order,QATC-986936,3983854,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,16/Apr/26 10:32 AM,16/Apr/26 10:32 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Monday.
+ # Select ""Two scrambled eggs 70 rub"".
+ # Select ""Pilaf 150 rub"".
+ # Click the ""Make the order"" button.
+ # Observe the amount debited in Order History
+
+Actual Result: 170 rub is debited instead of 220 rubles after making order. Please see (bug6.png)
+
+Expected Result: 220 rub debited should be shown in order history.","OS: Windows 11 (64 bit)
+Browser: Google chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"16/Apr/26 10:26 AM;s.rashid;bug6.png;https://jira.a1qa.com/secure/attachment/2774754/bug6.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift52g:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Monday: 370 rub is debited shown in history instead of 420 rubles after making order,QATC-986935,3983852,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,16/Apr/26 10:17 AM,16/Apr/26 10:17 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Monday
+ # Select ""Two scrambled eggs 70 rub"".
+ # Select ""Open Buffet 350 rub"".
+ # Click the ""Make the order"" button.
+ # Observe the amount debited in Order History
+
+Actual Result: 370 rub is debited shown in history instead of 420 rubles after making order. Please see  (bug5,png)
+
+Expected Result: 420 rubles should be debited after making order.","OS: Windows 11 (64 bit)
+Browser: Google chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"16/Apr/26 10:09 AM;s.rashid;bug5.png;https://jira.a1qa.com/secure/attachment/2774746/bug5.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift520:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Monday: 152 rubles is debited shown in order history instead of 202.1 rubles after making order,QATC-986931,3983846,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,16/Apr/26 10:07 AM,16/Apr/26 10:07 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Monday.
+ # Select ""Semolina Porridge 52.1 rub"" .
+ # Select ""Pilaf 150 rub"".
+ # Click ""Make the order"" button.
+ # Observe the amount debited in Order History.
+
+Actual Result: 152 rubles is debited shown in order history instead of 202.1 rubles after making order. Please see (bug4.png)
+
+Expected Result: 202.1 rubles debited should be shown in order history.
+
+ ","OS: Windows 11 (64 bit)
+Browser: Google chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"16/Apr/26 10:06 AM;s.rashid;bug4.png;https://jira.a1qa.com/secure/attachment/2774740/bug4.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift50o:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Monday: 352 rubles is debited instead of 402.1 rubles after making order,QATC-986929,3983843,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,16/Apr/26 9:55 AM,16/Apr/26 9:55 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Monday
+ # Select ""Semolina Porridge 52.1 rub"".
+ # Select ""Open Buffet 350 rub"".
+ # Click the ""Make the order"" button
+ # Observe the amount debited in Order History.
+
+Actual Result: 352 rubles is debited instead of 402.1 rubles after making order. Please see (bug3.png)
+
+Expected Result: 402.1 rubles should be debited from Account","OS: Windows 11 (64 bit)
+Browser: Google chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"16/Apr/26 9:46 AM;s.rashid;bug3.png;https://jira.a1qa.com/secure/attachment/2774736/bug3.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift500:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Monday: 450 rub debited showing in order history instead of 500 rubles,QATC-986925,3983838,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,16/Apr/26 9:39 AM,16/Apr/26 9:39 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Monday
+ # 
+Select ""Open Buffet 350 rub"" .
+ # 
+ 
+Select ""Pilaf 150 rub"".
+ # Click ""Make the order"" button
+ # Obseve the amount debited in Order History
+
+Actual Result:450 rub debited showing in order history instead of 500 rubles. Please see Bug2.png
+
+Expected Result:500 rubles should show in order history.","OS: Windows 11 (64 bit)
+Browser: Google chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"16/Apr/26 9:17 AM;s.rashid;Bug2.png;https://jira.a1qa.com/secure/attachment/2774730/Bug2.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift4yw:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Monday: 72 rub deducted is showing in order history instead of 122.1 rubles ,QATC-986921,3983831,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,s.rashid,s.rashid,16/Apr/26 9:10 AM,16/Apr/26 9:10 AM,06/May/26 7:49 PM,,1.0,,Calculator Menu,,0,,"Steps:
+ # Go to [https://test-dinner-eng.demohoster.com/dinner.html]
+ # Select Menu for Monday
+ # 
+Select Semolina Porridge 52.1 rub.
+ # 
+ 
+Select Two scrambled eggs 70 rub.
+ # Click the ""Make the order"" button
+ # Observe the amount in the order history
+
+Actual Result:72 rub deducted is showing in the order history instead of 122.1 rubles. Please see (bug1.png)
+
+Expected Result: The deducted amount should be 122.1 rubles in order history","OS: Windows 11 (64 bit)
+Browser: Google chrome (Version 147.0.7727.56 )",,,,,,,,,,Leads and Reporter only,"16/Apr/26 9:09 AM;s.rashid;bug1.png;https://jira.a1qa.com/secure/attachment/2774722/bug1.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ift4xc:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Account Balance: wrong amount is deducted from account after placing order,QATC-986545,3983015,Bug,Open,QATC,Training Center,software,a.golubovich,,,Critical,,,s.rashid,s.rashid,14/Apr/26 8:07 PM,16/Apr/26 8:33 AM,27/Apr/26 2:38 PM,,,,Calculator Menu,,0,,"Steps:
+ # Go to A1qa Calculator Menu
+ # Select Menu for Saturday
+ # Select Grits (50 rub) & Bread (1 rub)
+ # Check the amount of the order is 51 rub
+ # click ""Make the order""
+ # Check the balance update and observe the deducted amount.
+
+ 
+
+Actual Result: Wrong amount is deducted from account after placing order. The Balance amount is showing that 321 rub is deducted instead of deducting 51 rub.
+
+Expected result: Only 51 rub should be deducted and the system should not deduct any extra amount from the personal balance.",Browser: Google chrome,,,,,,,,,,Leads and Reporter only,"14/Apr/26 8:05 PM;s.rashid;Screenshot (100).png;https://jira.a1qa.com/secure/attachment/2774049/Screenshot+%28100%29.png","14/Apr/26 8:05 PM;s.rashid;Screenshot (101).png;https://jira.a1qa.com/secure/attachment/2774048/Screenshot+%28101%29.png",,,,,,,,,,,,,,,,,,,,,,,,,Billable,,,All,,,,,,,,,,,,,,,Functional,Instead of deducting any extra amount only the correct amount should be deducted from the personal balance.,,,,,,,,,,,,,,,,,,,,,,,"0|ifszyo:",9223372036854775807,,,,,,,,,1-Critical,,,,,,,,,,,,,,,,,,,,0.0,,,,,"16/Apr/26 8:33 AM;s.rashid;Account Balance: Saturday: 321 rub is deducted from account instead of 51 rub after making order
+Type: Bug
+Priority: Critical
+Fix Version/s:None
+Affects Version/s:1.0
+Component/s:Calculator Menu
+Environment:
+OS: Windows 11 (64 bit)
+Browser: Google chrome (Version 147.0.7727.56 )
+
+Severity/Importance:1-Critical
+Error Type:Functional
+Description
+Steps:
+
+1.Go to A1qa Calculator Menu 
+2.Select Menu for Saturday
+3.Select Grits (50 rub) 
+4.Select Bread (1 rub)
+5.Check the amount of the order is 51 rub
+6.click ""Make the order""
+7.Check the balance update 
+8.Observe the deducted amount.
+ 
+
+Actual Result: 321 rub is deducted from account instead of 51 rub after making order. 
+Expected result: Only 51 rub should be deducted.;;;"
+Order History: The amount of order is not correctly calculated,QATC-986534,3982992,Bug,Open,QATC,Training Center,software,a.golubovich,,,Critical,,,s.rashid,s.rashid,14/Apr/26 7:42 PM,16/Apr/26 8:23 AM,06/May/26 7:49 PM,,,,Calculator Menu,,0,,"Steps:
+ # Go to A1qa Menu calculator
+ # Select Menu for wednesday
+ # select chicken soup 250 rub & Mashed potato 70 rub
+ # Click ""Make the order""
+ # check order history and observe the calculation in history.
+
+Actual Result: The amount of order is not correctly calculated in history section.The amount should be 320 rub but it is showing 270 rub in order history.
+
+Expected Result: In order history the amount of order should be calculated correctly. ",Browser: Google Chrome,,,,,,,,,,Leads and Reporter only,"14/Apr/26 7:41 PM;s.rashid;Screenshot (99).png;https://jira.a1qa.com/secure/attachment/2774029/Screenshot+%2899%29.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,The amount of order should be calculated correctly in the order history section.,,,,,,,,,,,,,,,,,,,,,,,"0|ifsztk:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,"16/Apr/26 8:23 AM;s.rashid;Order History:Wednesday: The amount of order is not correctly calculated
+ Type: Bug
+Priority: Critical
+Fix Version/s:None
+Affects Version/s:1.0
+Component/s:Calculator Menu
+Environment:
+OS:Windows 11 (64 bit)
+Browser: Google Chrome (Version 147.0.7727.56)
+
+Severity/Importance:2-Major
+Error Type:Functional
+
+Description
+Steps:
+
+1.Go to A1qa Menu calculator (https://test-dinner-eng.demohoster.com/)
+2.Select Menu for wednesday
+3.select chicken soup 250 rub 
+4.select Mashed potato 70 rub
+5.Click ""Make the order"" button
+6.Check order history
+7.Observe the calculation in history.
+Actual Result: The amount of order is not correctly calculated in history section.The amount should be 320 rub but it is showing 270 rub in order history. Please see (bug1.png)
+
+Expected Result: In order history the amount of order should be calculated correctly. ;;;"
